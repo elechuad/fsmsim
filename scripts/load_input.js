@@ -20,6 +20,12 @@ function loadEgIII() {
     location = "page.html";
 }
 
+function loadEgDJ() {
+    sessionStorage.setItem("userInput", JSON.stringify(EG_DJ));
+    sessionStorage.setItem("fsmName", "Example: DJ");
+    location = "page.html";
+}
+
 function toEnterInput() {
     location = "lstevenll/vsim.html";
 }
@@ -28,4 +34,5 @@ function toEnterInput() {
 document.getElementById("egI").onclick = loadEgI;
 document.getElementById("egII").onclick = loadEgII;
 document.getElementById("egIII").onclick = loadEgIII;
+document.getElementById("egIV").onclick = loadEgDJ;
 document.getElementById("userDesign").onclick = toEnterInput;
